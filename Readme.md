@@ -8,6 +8,10 @@
 
 
 ## 1 --------- EXPLAINATION --------- 
+This is my first project .
+
+It's made with PUG, Express, Node and Bootstrap.
+
 
 This application is for add, edit or delete "articles" on a same database.
 
@@ -21,6 +25,8 @@ In it, you can:
 		-Edit or delete an article
 		-send a mail to the administrator
 		-log out
+		
+There is a simply application without deep constraint.
 
 
 ## 2 --------- START ---------
