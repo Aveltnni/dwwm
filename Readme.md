@@ -45,121 +45,120 @@ npm start
 
 ## 3 --------- NAVIGATION---------
 
+1-Login
+2-Register
+3-Forgot password
+4-Home
+5-List
+6-Article
+7-Add article
+8-Edit article
+9-Mail
+10-Logout
 
-	1-Login
-	2-Register
-	3-Forgot password
-	4-Home
-	5-List
-	6-Article
-	7-Add article
-	8-Edit article
-	9-Mail
-	10-Logout
 
+### 1-Login :
 
-	1-Login :
-
-	In this page you can use your user log: Email and Password
+In this page you can use your user log: Email and Password
 	
-	If you forgot your password, you can click on the link "Forgot password?"
+If you forgot your password, you can click on the link "Forgot password?"
 
-	At least, for create your new user, click on the link "Register" at the top of the page on the header.
-
-
+At least, for create your new user, click on the link "Register" at the top of the page on the header.
 
 
-	2-Register :
+
+
+2-Register :
 	
-	For register a new user, you can't have empty fields :
+For register a new user, you can't have empty fields :
 		
-		- Name
-		- Surname
-		- Month of birth
-		- Year of birth
-		- Country
-		- Email
-		- Password (6 characters minimum)
-		- Confirm password (6 characters minimum)
+- Name
+- Surname
+- Month of birth
+- Year of birth
+- Country
+- Email
+- Password (6 characters minimum)
+- Confirm password (6 characters minimum)
 
-	Note your email and password for login in login page
-
-
-
-	3-Forgot password :
-
-	
-	In case you forgot your password, you can send a mail with your name and your email.
-	
-	An administrator will send you a new password for login.
+Note your email and password for login in login page
 
 
 
-	4-Home
-	
-	Once you are login, you will get a header in same pages with some links for navigate to the others pages:
-	
-	-Home
-	-List
-	-Add article
-	-Mail
-	-Logout
-
-	On page Home, you can navigate to an other page.
-
-
-
-
-	5-List
-
-	This page show you all article created by users.
-
-	Click on one title for navigate to his information.
+3-Forgot password :
 
 	
-	6-Article
+In case you forgot your password, you can send a mail with your name and your email.
 	
-	This page show you information about an article choosed on list page.
+An administrator will send you a new password for login.
+
+
+
+4-Home
 	
-	You can edit or delete this article.
-
-
-
-	7-Add article
-
-	For add a new article you must refer a title and information in body part.
-
-	The name of author is your name refered when you did your register, you can't change it.
-
-
-
-	8-Edit article
+Once you are login, you will get a header in same pages with some links for navigate to the others pages:
 	
-	On edit article you will find information of this one and edit title and/or body.
-	
-	Empty fields are forbidden.
+-Home
+-List
+-Add article
+-Mail
+-Logout
 
-	The name of author will be replace by your own name.
+On page Home, you can navigate to an other page.
 
-	The name of author is your name refered when you did your register, you can't change it.
+
+
+
+5-List
+
+This page show you all article created by users.
+
+Click on one title for navigate to his information.
 
 	
+6-Article
 	
-	9-Mail
+This page show you information about an article choosed on list page.
 	
-	The mail page can permit you to send an email.
+You can edit or delete this article.
 
-	Your email adress refered on register page will be put on field "from", you can't change it.
+
+
+7-Add article
+
+For add a new article you must refer a title and information in body part.
+
+The name of author is your name refered when you did your register, you can't change it.
+
+
+
+8-Edit article
 	
-	Empty fields are forbidden.
+On edit article you will find information of this one and edit title and/or body.
+	
+Empty fields are forbidden.
+
+The name of author will be replace by your own name.
+
+The name of author is your name refered when you did your register, you can't change it.
+
+	
+	
+9-Mail
+	
+The mail page can permit you to send an email.
+
+Your email adress refered on register page will be put on field "from", you can't change it.
+	
+Empty fields are forbidden.
 
 
 
 
 
-	10-Logout
+10-Logout
 
-	You can logout for connect with an other user.
+You can logout for connect with an other user.
 
 
 
