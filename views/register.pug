@@ -1,0 +1,373 @@
+extends layout_reg
+
+block content
+  h1 Register
+    svg.bi.bi-person-plus-fill(width='1em' height='1em' viewbox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+      path(fill-rule='evenodd' d='M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z')
+
+  form(method='POST' action='/users/register')
+    .form-group
+      label Name:
+      input.form-control(name='name' type='text')
+    .form-group
+      label Surname:
+      input.form-control(name='surname' type='text')
+
+      .form-group
+      label Month of birth:
+      select.form-control(name='monthBirth' type='select')
+        option(value='') -- Select a month --
+        option(value='January') January
+        option(value='February') February
+        option(value='March') March
+        option(value='April') April
+        option(value='May') May
+        option(value='June') June
+        option(value='July') July
+        option(value='August') August
+        option(value='September') September
+        option(value='October') October
+        option(value='November') November
+        option(value='December') December
+
+      .form-group
+      label Year of birth:
+      select.form-control(name='yearBirth' type='select', option= "year" )
+        option(value='') -- Select a year --
+        option(value='1930') 1930
+        option(value='1931') 1931
+        option(value='1932') 1932
+        option(value='1933') 1933
+        option(value='1934') 1934
+        option(value='1935') 1935
+        option(value='1936') 1936
+        option(value='1937') 1937
+        option(value='1938') 1938
+        option(value='1939') 1939
+        option(value='1940') 1940
+        option(value='1941') 1941
+        option(value='1942') 1942
+        option(value='1943') 1943
+        option(value='1944') 1944
+        option(value='1945') 1945
+        option(value='1946') 1946
+        option(value='1947') 1947
+        option(value='1948') 1948
+        option(value='1949') 1949
+        option(value='1950') 1950
+        option(value='1951') 1951
+        option(value='1952') 1952
+        option(value='1953') 1953
+        option(value='1954') 1954
+        option(value='1955') 1955
+        option(value='1956') 1956
+        option(value='1957') 1957
+        option(value='1958') 1958
+        option(value='1959') 1959
+        option(value='1960') 1960
+        option(value='1961') 1961
+        option(value='1962') 1962
+        option(value='1963') 1963
+        option(value='1964') 1964
+        option(value='1965') 1965
+        option(value='1966') 1966
+        option(value='1967') 1967
+        option(value='1968') 1968
+        option(value='1969') 1969
+        option(value='1970') 1970
+        option(value='1971') 1971
+        option(value='1972') 1972
+        option(value='1973') 1973
+        option(value='1974') 1974
+        option(value='1975') 1975
+        option(value='1976') 1976
+        option(value='1977') 1977
+        option(value='1978') 1978
+        option(value='1979') 1979
+        option(value='1980') 1980
+        option(value='1981') 1981
+        option(value='1982') 1982
+        option(value='1983') 1983
+        option(value='1984') 1984
+        option(value='1985') 1985
+        option(value='1986') 1986
+        option(value='1987') 1987
+        option(value='1988') 1988
+        option(value='1989') 1989
+        option(value='1990') 1990
+        option(value='1991') 1991
+        option(value='1992') 1992
+        option(value='1993') 1993
+        option(value='1994') 1994
+        option(value='1995') 1995
+        option(value='1996') 1996
+        option(value='1997') 1997
+        option(value='1998') 1998
+        option(value='1999') 1999
+        option(value='2000') 2000
+        option(value='2001') 2001
+        option(value='2002') 2002
+        option(value='2003') 2003
+        option(value='2004') 2004
+        option(value='2005') 2005
+        option(value='2006') 2006
+        option(value='2007') 2007
+        option(value='2008') 2008
+        option(value='2009') 2009
+        option(value='2010') 2010
+        option(value='2011') 2011
+        option(value='2012') 2012
+        option(value='2013') 2013
+        option(value='2014') 2014
+        option(value='2015') 2015
+        option(value='2016') 2016
+        option(value='2017') 2017
+        option(value='2018') 2018
+        option(value='2019') 2019
+        option(value='2020') 2020
+      .form-group
+      label Country:
+      select.form-control(name='country' type='select'  )
+        option(value='') -- Select a country --
+        option(value='Afghanistan') Afghanistan 
+        option(value='Afrique_Centrale') Afrique_Centrale 
+        option(value='Afrique_du_sud') Afrique_du_Sud 
+        option(value='Albanie') Albanie 
+        option(value='Algerie') Algerie 
+        option(value='Allemagne') Allemagne 
+        option(value='Andorre') Andorre 
+        option(value='Angola') Angola 
+        option(value='Anguilla') Anguilla 
+        option(value='Arabie_Saoudite') Arabie_Saoudite 
+        option(value='Argentine') Argentine 
+        option(value='Armenie') Armenie 
+        option(value='Australie') Australie 
+        option(value='Autriche') Autriche 
+        option(value='Azerbaidjan') Azerbaidjan 
+        option(value='Bahamas') Bahamas 
+        option(value='Bangladesh') Bangladesh 
+        option(value='Barbade') Barbade 
+        option(value='Bahrein') Bahrein 
+        option(value='Belgique') Belgique 
+        option(value='Belize') Belize 
+        option(value='Benin') Benin 
+        option(value='Bermudes') Bermudes 
+        option(value='Bielorussie') Bielorussie 
+        option(value='Bolivie') Bolivie 
+        option(value='Botswana') Botswana 
+        option(value='Bhoutan') Bhoutan 
+        option(value='Boznie_Herzegovine') Boznie_Herzegovine 
+        option(value='Bresil') Bresil 
+        option(value='Brunei') Brunei 
+        option(value='Bulgarie') Bulgarie 
+        option(value='Burkina_Faso') Burkina_Faso 
+        option(value='Burundi') Burundi 
+        option(value='Caiman') Caiman 
+        option(value='Cambodge') Cambodge 
+        option(value='Cameroun') Cameroun 
+        option(value='Canada') Canada 
+        option(value='Canaries') Canaries 
+        option(value='Cap_vert') Cap_Vert 
+        option(value='Chili') Chili 
+        option(value='Chine') Chine 
+        option(value='Chypre') Chypre 
+        option(value='Colombie') Colombie 
+        option(value='Comores') Colombie 
+        option(value='Congo') Congo 
+        option(value='Congo_democratique') Congo_democratique 
+        option(value='Cook') Cook 
+        option(value='Coree_du_Nord') Coree_du_Nord 
+        option(value='Coree_du_Sud') Coree_du_Sud 
+        option(value='Costa_Rica') Costa_Rica 
+        option(value='Cote_d_Ivoire') C&ocirc;te_d_Ivoire 
+        option(value='Croatie') Croatie 
+        option(value='Cuba') Cuba 
+        option(value='Danemark') Danemark 
+        option(value='Djibouti') Djibouti 
+        option(value='Dominique') Dominique 
+        option(value='Egypte') Egypte 
+        option(value='Emirats_Arabes_Unis') Emirats_Arabes_Unis 
+        option(value='Equateur') Equateur 
+        option(value='Erythree') Erythree 
+        option(value='Espagne') Espagne 
+        option(value='Estonie') Estonie 
+        option(value='Etats_Unis') Etats_Unis 
+        option(value='Ethiopie') Ethiopie 
+        option(value='Falkland') Falkland 
+        option(value='Feroe') Feroe 
+        option(value='Fidji') Fidji 
+        option(value='Finlande') Finlande 
+        option(value='France') France 
+        option(value='Gabon') Gabon 
+        option(value='Gambie') Gambie 
+        option(value='Georgie') Georgie 
+        option(value='Ghana') Ghana 
+        option(value='Gibraltar') Gibraltar 
+        option(value='Grece') Grece 
+        option(value='Grenade') Grenade 
+        option(value='Groenland') Groenland 
+        option(value='Guadeloupe') Guadeloupe 
+        option(value='Guam') Guam 
+        option(value='Guatemala') Guatemala
+        option(value='Guernesey') Guernesey 
+        option(value='Guinee') Guinee 
+        option(value='Guinee_Bissau') Guinee_Bissau 
+        option(value='Guinee equatoriale') Guinee_Equatoriale 
+        option(value='Guyana') Guyana 
+        option(value='Guyane_Francaise ') Guyane_Francaise 
+        option(value='Haiti') Haiti 
+        option(value='Hawaii') Hawaii 
+        option(value='Honduras') Honduras 
+        option(value='Hong_Kong') Hong_Kong 
+        option(value='Hongrie') Hongrie 
+        option(value='Inde') Inde 
+        option(value='Indonesie') Indonesie 
+        option(value='Iran') Iran 
+        option(value='Iraq') Iraq 
+        option(value='Irlande') Irlande 
+        option(value='Islande') Islande 
+        option(value='Israel') Israel 
+        option(value='Italie') italie 
+        option(value='Jamaique') Jamaique 
+        option(value='Jan Mayen') Jan Mayen 
+        option(value='Japon') Japon 
+        option(value='Jersey') Jersey 
+        option(value='Jordanie') Jordanie 
+        option(value='Kazakhstan') Kazakhstan 
+        option(value='Kenya') Kenya 
+        option(value='Kirghizstan') Kirghizistan 
+        option(value='Kiribati') Kiribati 
+        option(value='Koweit') Koweit 
+        option(value='Laos') Laos 
+        option(value='Lesotho') Lesotho 
+        option(value='Lettonie') Lettonie 
+        option(value='Liban') Liban 
+        option(value='Liberia') Liberia 
+        option(value='Liechtenstein') Liechtenstein 
+        option(value='Lituanie') Lituanie 
+        option(value='Luxembourg') Luxembourg 
+        option(value='Lybie') Lybie 
+        option(value='Macao') Macao 
+        option(value='Macedoine') Macedoine 
+        option(value='Madagascar') Madagascar 
+        option(value='Madère') Mad&egrave;re 
+        option(value='Malaisie') Malaisie 
+        option(value='Malawi') Malawi 
+        option(value='Maldives') Maldives 
+        option(value='Mali') Mali 
+        option(value='Malte') Malte 
+        option(value='Man') Man 
+        option(value='Mariannes du Nord') Mariannes du Nord 
+        option(value='Maroc') Maroc 
+        option(value='Marshall') Marshall 
+        option(value='Martinique') Martinique 
+        option(value='Maurice') Maurice 
+        option(value='Mauritanie') Mauritanie 
+        option(value='Mayotte') Mayotte 
+        option(value='Mexique') Mexique 
+        option(value='Micronesie') Micronesie 
+        option(value='Midway') Midway 
+        option(value='Moldavie') Moldavie 
+        option(value='Monaco') Monaco 
+        option(value='Mongolie') Mongolie 
+        option(value='Montserrat') Montserrat 
+        option(value='Mozambique') Mozambique 
+        option(value='Namibie') Namibie 
+        option(value='Nauru') Nauru 
+        option(value='Nepal') Nepal 
+        option(value='Nicaragua') Nicaragua 
+        option(value='Niger') Niger 
+        option(value='Nigeria') Nigeria 
+        option(value='Niue') Niue 
+        option(value='Norfolk') Norfolk 
+        option(value='Norvege') Norvege 
+        option(value='Nouvelle_Caledonie') Nouvelle_Caledonie 
+        option(value='Nouvelle_Zelande') Nouvelle_Zelande 
+        option(value='Oman') Oman 
+        option(value='Ouganda') Ouganda 
+        option(value='Ouzbekistan') Ouzbekistan 
+        option(value='Pakistan') Pakistan 
+        option(value='Palau') Palau 
+        option(value='Palestine') Palestine 
+        option(value='Panama') Panama 
+        option(value='Papouasie_Nouvelle_Guinee') Papouasie_Nouvelle_Guinee 
+        option(value='Paraguay') Paraguay 
+        option(value='Pays_Bas') Pays_Bas 
+        option(value='Perou') Perou 
+        option(value='Philippines') Philippines 
+        option(value='Pologne') Pologne 
+        option(value='Polynesie') Polynesie 
+        option(value='Porto_Rico') Porto_Rico 
+        option(value='Portugal') Portugal 
+        option(value='Qatar') Qatar 
+        option(value='Republique_Dominicaine') Republique_Dominicaine 
+        option(value='Republique_Tcheque') Republique_Tcheque 
+        option(value='Reunion') Reunion 
+        option(value='Roumanie') Roumanie 
+        option(value='Royaume_Uni') Royaume_Uni 
+        option(value='Russie') Russie 
+        option(value='Rwanda') Rwanda 
+        option(value='Sahara Occidental') Sahara Occidental 
+        option(value='Sainte_Lucie') Sainte_Lucie 
+        option(value='Saint_Marin') Saint_Marin 
+        option(value='Salomon') Salomon 
+        option(value='Salvador') Salvador 
+        option(value='Samoa_Occidentales') Samoa_Occidentales
+        option(value='Samoa_Americaine') Samoa_Americaine 
+        option(value='Sao_Tome_et_Principe') Sao_Tome_et_Principe 
+        option(value='Senegal') Senegal 
+        option(value='Seychelles') Seychelles 
+        option(value='Sierra Leone') Sierra Leone 
+        option(value='Singapour') Singapour 
+        option(value='Slovaquie') Slovaquie 
+        option(value='Slovenie') Slovenie
+        option(value='Somalie') Somalie 
+        option(value='Soudan') Soudan 
+        option(value='Sri_Lanka') Sri_Lanka 
+        option(value='Suede') Suede 
+        option(value='Suisse') Suisse 
+        option(value='Surinam') Surinam 
+        option(value='Swaziland') Swaziland 
+        option(value='Syrie') Syrie 
+        option(value='Tadjikistan') Tadjikistan 
+        option(value='Taiwan') Taiwan 
+        option(value='Tonga') Tonga 
+        option(value='Tanzanie') Tanzanie 
+        option(value='Tchad') Tchad 
+        option(value='Thailande') Thailande 
+        option(value='Tibet') Tibet 
+        option(value='Timor_Oriental') Timor_Oriental 
+        option(value='Togo') Togo 
+        option(value='Trinite_et_Tobago') Trinite_et_Tobago 
+        option(value='Tristan da cunha') Tristan de cuncha 
+        option(value='Tunisie') Tunisie 
+        option(value='Turkmenistan') Turmenistan 
+        option(value='Turquie') Turquie 
+        option(value='Ukraine') Ukraine 
+        option(value='Uruguay') Uruguay 
+        option(value='Vanuatu') Vanuatu 
+        option(value='Vatican') Vatican 
+        option(value='Venezuela') Venezuela 
+        option(value='Vierges_Americaines') Vierges_Americaines 
+        option(value='Vierges_Britanniques') Vierges_Britanniques 
+        option(value='Vietnam') Vietnam 
+        option(value='Wake') Wake 
+        option(value='Wallis et Futuma') Wallis et Futuma 
+        option(value='Yemen') Yemen 
+        option(value='Yougoslavie') Yougoslavie 
+        option(value='Zambie') Zambie 
+        option(value='Zimbabwe') Zimbabwe 
+
+
+    .form-group
+      label Email:
+      input.form-control(name='email' type='email')
+    
+    .form-group
+      label Password:
+      input.form-control(name='password' type='password' placeholder='Password must have 6 characters minimum')
+    .form-group
+      label Confirm Password:
+      input.form-control(name='password2' type='password' placeholder='Password must have 6 characters minimum')
+    br
+    input.btn.btn-primary(type='submit' value='Submit')

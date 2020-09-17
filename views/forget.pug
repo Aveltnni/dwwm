@@ -1,0 +1,18 @@
+extends layout_reg
+
+block content
+  h1 Forgot pasword?
+  br
+  p Put your name and your email.
+  br
+  form(method='POST' action='/users/forget')
+    .form-group
+      label Name:
+      input.form-control(name='name' type='text')
+    .form-group
+      label Email:
+      input.form-control(name='email' type='email')
+
+
+    br
+    input.btn.btn-primary(type='submit' value='Submit')

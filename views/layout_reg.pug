@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title Knowledgebase
+    link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet' href='/css/style.css')
+    link(rel='shortcut icon' href='public/favicon.ico' type='image/x-icon')
+    link(rel='icon' href='public/favicon.ico' type='image/x-icon')
+
+
+  body
+    nav.navbar.navbar-inverse
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+
+            li
+              a(href='/users/login') Login 
+                svg.bi.bi-door-open-fill(width='2em' height='2em' viewbox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                 path(fill-rule='evenodd' d='M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2v13h1V2.5a.5.5 0 0 0-.5-.5H11zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z')
+
+    .container
+      != messages('message', locals)
+      if errors
+        each error, i in errors
+          div(class='alert alert-danger') #{error.msg}
+      block content
+      br
+      br
+      br
+      br
+      hr
+      footer
+        p Copyright ValCompany &copy; 2020
+
+        hr
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='/js/main.js')
+    script(src='https://restcountries.eu/rest/v2/name/{name}')

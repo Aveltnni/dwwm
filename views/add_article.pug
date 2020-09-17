@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  -data = data || {}
+    h1 #{title}
+      svg.bi.bi-plus-circle-fill(width='1.5em' height='1.5em' viewbox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+        path(fill-rule='evenodd' d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z')
+
+    
+    form(method='POST' action='/articles/add')
+      .form-group
+        label Title:
+        input.form-control(name='title' type='text')
+      .form-group
+        label Author:
+        input.form-control(readonly='' name='author' type='text', value=data.name)
+
+      .form-group
+        label Body:
+        textarea.form-control(name='body')
+      br
+      input.btn.btn-primary(type='submit' value='Submit')
+      a.btn.btn-default(href='/articles/articles') Cancel
+
+

@@ -1,0 +1,79 @@
+doctype html
+html
+  head
+    title Knowledgebase
+    link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet' href='public/css/style.css')
+    link(rel='shortcut icon' href='public/favicon.ico' type='image/x-icon')
+    link(rel='icon' href='public/favicon.ico' type='image/x-icon')
+
+  body
+    nav.navbar.navbar-inverse
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-left
+            li
+              h1(fill='blue') ValAndCO
+
+
+          ul.nav.navbar-nav
+
+
+            li
+              a(href='/articles/home') Home  
+                svg.bi.bi-house-fill(width='2em' height='2em' viewbox='0 0 16 16' fill='cyan' xmlns='http://www.w3.org/2000/svg')
+                  path(fill-rule='evenodd' d='M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z')
+                  path(fill-rule='evenodd' d='M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z')
+
+            li
+              a(href='/articles/articles') List  
+                svg.bi.bi-card-list(width='2em' height='2em' viewbox='0 0 16 16' fill='green' xmlns='http://www.w3.org/2000/svg')
+                  path(fill-rule='evenodd' d='M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z')
+                  path(fill-rule='evenodd' d='M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z')
+                  circle(cx='3.5' cy='5.5' r='.5')
+                  circle(cx='3.5' cy='8' r='.5')
+                  circle(cx='3.5' cy='10.5' r='.5')
+                  
+            li
+              a(href='/articles/add') Add Article  
+               svg.bi.bi-plus-square-fill(width='2em' height='2em' viewbox='0 0 16 16' fill='orange' xmlns='http://www.w3.org/2000/svg')
+                 path(fill-rule='evenodd' d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z')
+
+            li
+              a(href='/articles/mail') Mail  
+                svg.bi.bi-envelope-fill(width='2em' height='2em' viewbox='0 0 16 16' fill='blue' xmlns='http://www.w3.org/2000/svg')
+                  path(fill-rule='evenodd' d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z')
+
+          ul.nav.navbar-nav.navbar-right
+            
+              li
+                a(href='/users/logout') Logout 
+                 svg.bi.bi-door-closed-fill(width='2em' height='2em' viewbox='0 0 16 16' fill='red' xmlns='http://www.w3.org/2000/svg')
+                  path(fill-rule='evenodd' d='M4 1a1 1 0 0 0-1 1v13H1.5a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2a1 1 0 0 0-1-1H4zm2 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z')
+
+            
+    .container
+      != messages('message', locals)
+      if errors
+        each error, i in errors
+          div(class='alert alert-danger') #{error.msg}
+      block content
+      br
+      br
+      br
+      br
+      hr
+      footer
+        p Copyright ValCompany &copy; 2020
+
+        hr
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='/js/main.js')

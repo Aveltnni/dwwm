@@ -1,0 +1,31 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "Simple knowledgebase app using node and express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Elvis Chan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "connect-ensure-login": "^0.1.1",
+    "connect-flash": "^0.1.1",
+    "express": "^4.15.3",
+    "express-favicon": "^2.0.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.1",
+    "middleware": "^1.0.0",
+    "mongoose": "^4.10.4",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.4",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-rc.2",
+    "sendmail": "^1.6.1",
+    "serve-favicon": "^2.5.0"
+  }
+}
