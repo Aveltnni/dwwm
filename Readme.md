@@ -34,13 +34,13 @@ MongoDB: https://www.mongodb.com/try/download/community
 	
 
 For start you should follow this steps:	
-					```
-					npm install
-					```
-					```
-					npm start
-					```
-					-open your browser on http://localhost:3000/
+```
+npm install
+```
+```
+npm start
+```
+-open your browser on http://localhost:3000/
 
 
 ## 3 --------- NAVIGATION---------
