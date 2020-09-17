@@ -1,4 +1,4 @@
-#ValandCo
+# ValandCo
 
 1-Explaination
 
@@ -7,7 +7,7 @@
 3-Navigation
 
 
-##1 --------- EXPLAINATION --------- 
+## 1 --------- EXPLAINATION --------- 
 
 This application is for add, edit or delete "articles" on a same database.
 
@@ -23,7 +23,7 @@ In it, you can:
 		-log out
 
 
-##2 --------- START ---------
+## 2 --------- START ---------
 
 
 For this application to work you need to have install an IDE and MongoDB on your computer
@@ -34,14 +34,16 @@ MongoDB: https://www.mongodb.com/try/download/community
 	
 
 For start you should follow this steps:	
-					```bash
+					```
 					npm install
 					```
-					-npm start
+					```
+					npm start
+					```
 					-open your browser on http://localhost:3000/
 
 
-##3 --------- NAVIGATION---------
+## 3 --------- NAVIGATION---------
 
 
 	1-Login
