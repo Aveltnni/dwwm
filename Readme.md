@@ -45,16 +45,25 @@ npm start
 
 ## 3 --------- NAVIGATION---------
 
-1-Login
-2-Register
-3-Forgot password
-4-Home
-5-List
-6-Article
-7-Add article
-8-Edit article
-9-Mail
-10-Logout
+ 1-Login
+ 
+ 2-Register
+ 
+ 3-Forgot password
+ 
+ 4-Home
+ 
+ 5-List
+ 
+ 6-Article
+ 
+ 7-Add article
+ 
+ 8-Edit article
+ 
+ 9-Mail
+ 
+ 10-Logout
 
 
 ### 1-Login :
@@ -68,7 +77,7 @@ At least, for create your new user, click on the link "Register" at the top of t
 
 
 
-2-Register :
+### 2-Register :
 	
 For register a new user, you can't have empty fields :
 		
@@ -85,7 +94,7 @@ Note your email and password for login in login page
 
 
 
-3-Forgot password :
+### 3-Forgot password :
 
 	
 In case you forgot your password, you can send a mail with your name and your email.
@@ -94,7 +103,7 @@ An administrator will send you a new password for login.
 
 
 
-4-Home
+### 4-Home
 	
 Once you are login, you will get a header in same pages with some links for navigate to the others pages:
 	
@@ -109,14 +118,14 @@ On page Home, you can navigate to an other page.
 
 
 
-5-List
+### 5-List
 
 This page show you all article created by users.
 
 Click on one title for navigate to his information.
 
 	
-6-Article
+### 6-Article
 	
 This page show you information about an article choosed on list page.
 	
@@ -124,7 +133,7 @@ You can edit or delete this article.
 
 
 
-7-Add article
+### 7-Add article
 
 For add a new article you must refer a title and information in body part.
 
@@ -132,7 +141,7 @@ The name of author is your name refered when you did your register, you can't ch
 
 
 
-8-Edit article
+### 8-Edit article
 	
 On edit article you will find information of this one and edit title and/or body.
 	
@@ -144,7 +153,7 @@ The name of author is your name refered when you did your register, you can't ch
 
 	
 	
-9-Mail
+### 9-Mail
 	
 The mail page can permit you to send an email.
 
@@ -156,7 +165,7 @@ Empty fields are forbidden.
 
 
 
-10-Logout
+### 10-Logout
 
 You can logout for connect with an other user.
 
